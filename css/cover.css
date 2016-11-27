@@ -156,6 +156,11 @@ body {
   }
 }
 
+.site-wrapper-inner {
+  background: url("https://c4.staticflickr.com/4/3006/4563871691_ebb76fb929_o.jpg") no-repeat center fixed;
+  background-size: cover;
+}
+
 @media (min-width: 992px) {
   .masthead,
   .mastfoot,
