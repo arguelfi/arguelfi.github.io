@@ -1,0 +1,51 @@
+body {
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+}
+
+.cover-container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.table-of-contents a.active {
+
+}
+
+.placeholder {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    z-index: -10;
+    transition: -webkit-filter 1.5s linear, filter 1.5s linear, opacity 1.5s linear;
+    background-color: #f6f6f6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+
+.img-full {
+    background-image: url("https://c2.staticflickr.com/6/5764/31164112721_0d411a64dc_h.jpg");
+}
+
+.img-small {
+    background-image: url("https://c2.staticflickr.com/6/5764/31164112721_4e8f3ce523_t.jpg");
+    -webkit-filter: blur(20px);
+    filter: blur(20px);
+    /* this is needed so Safari keeps sharp edges */
+    transform: scale(1);
+}
+
+.placeholder.loaded {
+    opacity: 1;
+}
+
+.parallax .placeholder img {
+    display: block !important;
+}
