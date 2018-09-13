@@ -37,7 +37,7 @@ by the underlying Datalake.
 Fraud and Marketing dashboards
 ElasticSearch & Cassandra data aggregation in Node.js
 
-#### SACEM **Jan 2014 – Jul 2016**
+#### SACEM **Jan 2015 – Jul 2016**
 Core business project for our client and first Agile one for them. 
 The team developed a solution to easily handle errors in payments issued for several reasons. 
 The system integrated manual, semi-automatic and automatic scenarios. 
@@ -45,7 +45,7 @@ Frontend in AngularJS V.1, backend in Java with Spring, Hibernate, Guava, Swagge
 BDD with Cucumber and TDD.
 
 ---
-
+~~-~~
 ## *eSpatial, Dublin, Ireland* **Feb 2014 – Aug 2014**
 ### Senior JAVA Developer
 Part of a multinational team developing a GIS oriented solution for visualizing clients data. 
@@ -95,7 +95,7 @@ Complex performance issues solving incluiding refactoring of a critical module,
 greatly accelerating its processing. 
 Experience with Tapestry, Hibernate, Spring, Sybase, web services, JMS, SOA, etc. 
 Mentoring of new members of the team including systems architecture.
-
+~~-~~
 # Technical Stack
 |               |                  |
 |:--------------|:-----------------|
@@ -122,9 +122,11 @@ Mentoring of new members of the team including systems architecture.
   Buenos Aires, Argentina (Incomplete)
 
 # Certifications
-* Sun Certified Developer For Java Web Services (SCDJWS)                                                                                2008
-* Sun Certified Programmer for Java (SCJP)
-* Apache Certified Cassandra Architect  (License V2.1-0080)                                                                      Jan 2016
+* Sun Certified Developer For Java Web Services (SCDJWS) **2008**
+* Sun Certified Programmer for Java (SCJP) **2008**
+* Apache Certified Cassandra Architect  (License V2.1-0080) **2016**
+
+~~-~~
 
 # References
 * **Jean-Christophe Meillaud**

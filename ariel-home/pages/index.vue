@@ -1,6 +1,6 @@
 <template>
   <v-layout align-center justify-center fill-height text-justify>
-    <v-flex xs12 sm8 md6>
+    <v-flex xs12 sm10 md8>
       <v-tooltip top nudge-top="5">
         <v-btn
             fixed
@@ -20,11 +20,8 @@
     </v-flex>
   </v-layout>
 </template>
-
 <script>
   import marked from 'marked'
-  import html2canvas from 'html2canvas'
-  import JsPDF from 'jspdf'
   import cv from './CV.md'
 
   export default {
@@ -42,30 +39,34 @@
           val.classList.add('v-datatable', 'v-table', 'table-back', 'theme--light')
           val.removeChild(val.querySelector('thead'))
         })
+        this.$el.querySelectorAll('del').forEach((val, key) => {
+          val.classList.add('html2pdf__page-break', 'hide')
+        })
       })
-      this.html2canvas = html2canvas
     },
     methods: {
       download () {
-        html2canvas(document.body, {
-          ignoreElements: (element) => {
-            return element.nodeName === 'FOOTER' ||
-                element.classList.contains('v-tooltip__content') ||
-                element.classList.contains('v-btn')
-          },
-          scrollY: 0
-        }).then(canvas => {
-          // document.body.appendChild(canvas)
-          let data = canvas.toDataURL('image/png')
-          let pdf = new JsPDF('landscape', undefined, 'A4')
-          pdf.addImage(data, 'PNG', 0, 0, 297, 210)
-          pdf.save('CVArielGuelfi.pdf')
-        })
-        // let pdfName = 'CVArielGuelfi'
-        // let pdf = new Jspdf('p', 'pt', 'letter')
-        // pdf.addHTML(document.querySelector('#app'), 10, 10)
-        // pdf.save(pdfName + '.pdf')
+        if (process.browser) {
+          let opt = {
+            margin: 0,
+            filename: 'CVArielGuelfi.pdf',
+            html2canvas: {
+              ignoreElements: (element) => {
+                return element.nodeName === 'FOOTER' ||
+                  element.classList.contains('v-tooltip__content') ||
+                  element.classList.contains('v-btn')
+              },
+              windowWidth: 1440
+            },
+            jsPDF: { unit: 'mm', format: 'a4', orientation: 'p' },
+            enableLinks: true
+          }
+          let html2pdf = require('html2pdf.js')
+          let pdf = html2pdf()
+          pdf.from(document.body).set(opt).save()
+        }
       }
     }
   }
 </script>
+

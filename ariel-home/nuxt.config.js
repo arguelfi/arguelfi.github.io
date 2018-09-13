@@ -48,7 +48,7 @@ module.exports = {
     */
     extend(config, ctx) {
       config.module.rules.push({
-        test: /\.(txt|md)$/,
+        test: /CV.md$/,
           use: 'raw-loader'
       })
       if (ctx.isDev && ctx.isClient) {
