@@ -1,6 +1,8 @@
 <template>
-  <v-layout align-center justify-space-between column fill-height text-justify>
-    <div v-html="compiledMarkdown"></div>
+  <v-layout align-center justify-center fill-height text-justify>
+    <v-flex xs12 sm8 md6>
+      <div v-html="compiledMarkdown"></div>
+    </v-flex>
   </v-layout>
 </template>
 

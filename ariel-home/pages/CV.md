@@ -98,7 +98,7 @@ Mentoring of new members of the team including systems architecture.
 
 # Technical Stack
 |               |                  |
-|:-------------:|:----------------:|
+|:--------------|:-----------------|
 | Java 8/9      | Kafka            |
 | JavaScript    | RabbitMQ         |
 | Python        | Cassandra        |
@@ -116,11 +116,10 @@ Mentoring of new members of the team including systems architecture.
 * Basic Portuguese, Italian and Greek
 
 # Education
-  Systems Engineering
-  Universidad CAECE - Universidad Tecnológica Nacional
+* Systems Engineering
+  Universidad CAECE - Universidad Tecnológica Nacional  
   March. 2005 – December 2009
-  Buenos Aires, Argentina
-  (Incomplete)
+  Buenos Aires, Argentina (Incomplete)
 
 # Certifications
 * Sun Certified Developer For Java Web Services (SCDJWS)                                                                                2008
@@ -128,27 +127,30 @@ Mentoring of new members of the team including systems architecture.
 * Apache Certified Cassandra Architect  (License V2.1-0080)                                                                      Jan 2016
 
 # References
-* Jean-Christophe Meillaud
-  CTO - Scanbots
+* **Jean-Christophe Meillaud**
+  *CTO @ Scanbots*
   jc@houseofagile.com
-* Damien Kerbart
-  Software Engineer & Scrum Master
+* **Manuel Deval**
+  *Software Architect & IT Director @ Carrefour*
+  manuel.deval@gmail.com
+* **Damien Kerbart**
+  *Software Engineer & Scrum Master @ SACEM*
   damien@kerbart.com
-* Arnaud Morin
-  CTO 
+* **Arnaud Morin**
+  *Software Engineer & Scrum Master @ SACEM* 
   morin.arnaud@gmail.com
-* Paul Ryan
-  PMO - eSpatial.com
-  pryan@espatial.com
-* Holly Pease
-  Manager, Google Inc.
+* **Holly Pease**
+  *Manager @ Google*
   hpease@google.com
-* Matthew Simmons
-  Tech Manager, Google Inc.
+* **Matthew Simmons**
+  *Tech Manager @ Google*
   mpsimmon@google.com
-* Andres Melendez
-  Software Architect - Data Engineer, OLX
+* **Andres Melendez**
+  *Software Architect - Data Engineer @ Google*
   amelendez@gmail.com
-* Stella Goreico
-  Manager, Accenture, Argentina.
+* **Thomas Eliassen**
+  *Software Engineer @ IBM*
+  thomasliasn@gmail.com
+* **Stella Goreico**
+  *Manager @ Accenture*
   stella.goreico@gmail.com
