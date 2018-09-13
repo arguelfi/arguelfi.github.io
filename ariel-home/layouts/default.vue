@@ -8,7 +8,7 @@
         <nuxt />
       </v-container>
     </v-content>
-    <v-footer fixed app>
+    <v-footer app>
       <v-flex
           primary
           lighten-2

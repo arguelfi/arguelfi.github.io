@@ -11,6 +11,8 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "html2canvas": "^1.0.0-alpha.12",
+    "jspdf": "^1.4.1",
     "nuxt": "^1.0.0",
     "vuetify": "^1.0.0"
   },
