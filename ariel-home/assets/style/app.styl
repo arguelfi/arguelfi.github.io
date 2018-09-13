@@ -1,5 +1,43 @@
 // Import Vuetify styling
-@require '~vuetify/src/stylus/app.styl'
+@require '~vuetify/src/stylus/main.styl'
+
+h1
+  color $indigo['lighten-1']
+
+h2
+  color $blue-grey['lighten-1']
+
+h4
+  color $blue['lighten-2']
+
+h1
+h2
+h3
+h4
+  @extends .layout
+  @extends .justify-space-between
+
+.theme--light
+  table.v-table
+  ul
+  li
+    background-color inherit
 
 .page
   @extend .fade-transition
+
+ul
+  list-style-type none
+  margin .5rem 0 1rem 0
+  overflow hidden
+  position relative
+  padding-left: 0
+  li
+    line-height 1.5rem
+    padding 10px 20px
+    margin 0
+    border-bottom: 1px solid #e0e0e0
+  li:hover
+    background rgba(0,0,0,0.04)
+  li:last-child
+    border-bottom none

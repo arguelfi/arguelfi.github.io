@@ -1,15 +1,6 @@
 <template>
-  <v-layout>
-    <section>
-      <v-layout
-          column
-          align-center
-          justify-center
-          class="white--text"
-      >
-        <div v-html="compiledMarkdown"></div>
-      </v-layout>
-    </section>
+  <v-layout align-center justify-space-between column fill-height text-justify>
+    <div v-html="compiledMarkdown"></div>
   </v-layout>
 </template>
 
@@ -23,9 +14,16 @@
     },
     computed: {
       compiledMarkdown: function () {
-        console.debug(cv)
-        return marked(cv, { sanitize: true })
+        return marked(cv, { sanitize: true, smartLists: true })
       }
+    },
+    mounted: function () {
+      this.$nextTick(function () {
+        this.$el.querySelectorAll('table').forEach((val, key) => {
+          val.classList.add('v-datatable', 'v-table', 'table-back', 'theme--light')
+          val.removeChild(val.querySelector('thead'))
+        })
+      })
     }
   }
 </script>
