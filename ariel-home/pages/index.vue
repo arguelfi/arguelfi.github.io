@@ -10,7 +10,8 @@
             right
             color="pink"
             slot="activator"
-            @click=download
+            href="/CV.pdf"
+            target="_blank"
         >
           <v-icon>save_alt</v-icon>
         </v-btn>
@@ -22,7 +23,7 @@
 </template>
 <script>
   import marked from 'marked'
-  import cv from './CV.md'
+  import cv from '../static/CV.md'
 
   export default {
     head: {
@@ -43,29 +44,6 @@
           val.classList.add('html2pdf__page-break', 'hide')
         })
       })
-    },
-    methods: {
-      download () {
-        if (process.browser) {
-          let opt = {
-            margin: 0,
-            filename: 'CVArielGuelfi.pdf',
-            html2canvas: {
-              ignoreElements: (element) => {
-                return element.nodeName === 'FOOTER' ||
-                  element.classList.contains('v-tooltip__content') ||
-                  element.classList.contains('v-btn')
-              },
-              windowWidth: 1440
-            },
-            jsPDF: { unit: 'mm', format: 'a4', orientation: 'p' },
-            enableLinks: true
-          }
-          let html2pdf = require('html2pdf.js')
-          let pdf = html2pdf()
-          pdf.from(document.body).set(opt).save()
-        }
-      }
     }
   }
 </script>

@@ -2,7 +2,7 @@
   <v-app>
     <v-toolbar fixed app color="primary" dark>
       <v-spacer></v-spacer>
-      <v-toolbar-title v-text="title"></v-toolbar-title>
+      <v-toolbar-title>Ariel Güelfi - Sr Software Developer</v-toolbar-title>
       <v-spacer></v-spacer>
     </v-toolbar>
     <v-content>
@@ -24,14 +24,4 @@
       </v-flex>
     </v-footer>
   </v-app>
-</template>
-
-<script>
-  export default {
-    data () {
-      return {
-        title: 'Ariel G\u00FCelfi - Sr Software Developer'
-      }
-    }
-  }
-</script>
+ </template>

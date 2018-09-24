@@ -17,6 +17,11 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' }
     ]
   },
+  render: {
+    bundleRenderer: {
+      gzip: { threshold: -1 }
+    }
+  },
   plugins: ['~/plugins/vuetify.js'],
   css: [
     '~/assets/style/app.styl'
@@ -40,7 +45,8 @@ module.exports = {
       ]
     },
     vendor: [
-      '~/plugins/vuetify.js'
+      '~/plugins/vuetify.js',
+      'marked'
     ],
     extractCSS: true,
     /*
