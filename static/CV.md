@@ -125,34 +125,3 @@ Mentoring of new members of the team including systems architecture.
 * Sun Certified Developer For Java Web Services (SCDJWS) **2008**
 * Sun Certified Programmer for Java (SCJP) **2008**
 * Apache Certified Cassandra Architect  (License V2.1-0080) **2016**
-
-~~-~~
-
-# References
-* **Jean-Christophe Meillaud**
-  *CTO @ Scanbots*
-  jc@houseofagile.com
-* **Manuel Deval**
-  *Software Architect & IT Director @ Carrefour*
-  manuel.deval@gmail.com
-* **Damien Kerbart**
-  *Software Engineer & Scrum Master @ SACEM*
-  damien@kerbart.com
-* **Arnaud Morin**
-  *Software Engineer & Scrum Master @ SACEM* 
-  morin.arnaud@gmail.com
-* **Holly Pease**
-  *Manager @ Google*
-  hpease@google.com
-* **Matthew Simmons**
-  *Tech Manager @ Google*
-  mpsimmon@google.com
-* **Andres Melendez**
-  *Software Architect - Data Engineer @ Google*
-  amelendez@gmail.com
-* **Thomas Eliassen**
-  *Software Engineer @ IBM*
-  thomasliasn@gmail.com
-* **Stella Goreico**
-  *Manager @ Accenture*
-  stella.goreico@gmail.com
