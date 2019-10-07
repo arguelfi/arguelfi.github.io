@@ -1,4 +1,19 @@
 # Career Summary
+## *Orange, Warsaw, Poland* **Nov 2018-Present**
+### Tech Lead
+Flex app is a new, digital first operator created from scratch at Orange.
+The user has full control of their contract, which is not only cancellable on request but allows the user to switch
+plans and packages at any time.
+The whole project was treated as a sort of StartUp within Orange and it went public only 2 years from its conception.
+I've joined the Payments team which integrates 3rd party payment providers by adding control flows and ensuring
+consistency and security to monetary transactions.
+The position includes some DevOps work, 3rd party APIs integration and own logic implementation in Java.
+Technologies used include SpringBoot, Java 8, PostgresDB, Unit Testing in Spock within an ecosystem that includes
+Kubernetes, Vault, Spring Cloud Config, GoCD, E2E tests, Gitlab and GitlabCI; some Ansible Scripting plus python 
+and NodeJS tools.
+
+---
+
 ## *Scanbots, Warsaw, Poland* **Oct 2017-Aug 2018**
 ### Tech Lead
 Scanbots’ goal was to make use of long-range drones for the monitoring of linear infrastructures, 
@@ -97,17 +112,18 @@ Experience with Tapestry, Hibernate, Spring, Sybase, web services, JMS, SOA, etc
 Mentoring of new members of the team including systems architecture.
 ~~-~~
 # Technical Stack
-|               |                  |
-|:--------------|:-----------------|
-| Java 8/9      | Kafka            |
-| JavaScript    | RabbitMQ         |
-| Python        | Cassandra        |
-| Go            | ElasticSearch    |
-| Docker        | Postgres/Postgis |
-| Ansible       | Spring           |
-| VueJS         | NodeJS           |
-| AngularJS     | Flask            |
-
+|                 |                  |
+|:----------------|:-----------------|
+|Java 8/9         | Spark            |
+|JavaScript       | Docker           |
+|Python           | Ansible          |
+|Go               | VueJS            |
+|Spring           | NodeJS           |
+|Postgres/Postgis | AngularJS        |
+|Kafka (+Streams) | Flask            |
+|RabbitMQ         | DevOps           |
+|Cassandra        | GoCD             |
+|ElasticSearch    | GitlabCI         |
 
 # Languages
 * Native Spanish
