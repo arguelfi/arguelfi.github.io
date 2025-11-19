@@ -1,0 +1,70 @@
+name: CI/CD - Nuxt Deployment
+
+on:
+  # Equivalent to 'branches: only: nuxt' in Travis CI
+  push:
+    branches:
+      - nuxt
+
+jobs:
+  build-and-deploy:
+    # Use an Ubuntu runner, a common environment for Node.js
+    runs-on: ubuntu-latest
+
+    # Equivalent to 'language: node_js' and 'node_js: "8"'
+    # This matrix is simple, but shows how you can use different Node versions
+    strategy:
+      matrix:
+        node-version: ['8.x'] # Use '8.x' to match the latest patch of Node 8, or '8' if you prefer.
+
+    steps:
+      - name: ⬇️ Checkout Repository
+        # Action to check out your code
+        uses: actions/checkout@v4
+
+      - name: 🛠️ Setup Node.js ${{ matrix.node-version }}
+        # Action to set up the specified Node.js version
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      # Equivalent to 'cache: directories: node_modules'
+      # GitHub Actions handles caching a bit differently, using a dedicated action.
+      # This example caches based on the 'package-lock.json' file (or 'yarn.lock').
+      - name: 📦 Get/Restore Node Modules Cache
+        uses: actions/cache@v4
+        id: npm-cache
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      # Equivalent to 'install: - npm install' (only runs if cache misses or on cache key mismatch)
+      - name: 💾 Install Dependencies
+        if: steps.npm-cache.outputs.cache-hit != 'true'
+        run: npm install
+
+      # Equivalent to 'install: - npm run generate'
+      - name: ⚙️ Generate Static Site
+        run: npm run generate
+
+      # Equivalent to 'script: - echo "Skipping tests"'
+      # This step is optional since the generate step is already running your build logic.
+      - name: ✅ Skip Tests (as per config)
+        run: echo "Skipping tests for deployment."
+
+      # Equivalent to 'deploy: provider: pages', 'github-token', 'target-branch', 'local-dir', and 'on: branch'
+      # We use the 'peaceiris/actions-gh-pages' action for deploying to GitHub Pages, 
+      # which simplifies the process significantly.
+      - name: 📤 Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          # The token is automatically available via secrets.GITHUB_TOKEN, 
+          # but since your original config used a custom token, we stick to that for clarity.
+          # Note: If your repository is public and you are deploying to the same repo, 
+          # you can often use ${{ secrets.GITHUB_TOKEN }} instead.
+          github_token: ${{ secrets.GITHUB_ACCESS_TOKEN }}
+          publish_dir: ./dist # Equivalent to 'local-dir: dist'
+          publish_branch: master # Equivalent to 'target-branch: master'
+          # 'skip-cleanup: true' is implicitly handled by the nature of this action.
