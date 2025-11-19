@@ -20,7 +20,7 @@
           white--text
           xs12
       >
-        &copy;2018 — <strong>Ariel G&#252;elfi</strong>
+        &copy;2025 — <strong>Ariel G&#252;elfi</strong>
       </v-flex>
     </v-footer>
   </v-app>
