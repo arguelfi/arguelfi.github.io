@@ -111,19 +111,61 @@ greatly accelerating its processing.
 Experience with Tapestry, Hibernate, Spring, Sybase, web services, JMS, SOA, etc. 
 Mentoring of new members of the team including systems architecture.
 ~~-~~
+
 # Technical Stack
-|                 |                  |
-|:----------------|:-----------------|
-|Java 8/9         | Spark            |
-|JavaScript       | Docker           |
-|Python           | Ansible          |
-|Go               | VueJS            |
-|Spring           | NodeJS           |
-|Postgres/Postgis | AngularJS        |
-|Kafka (+Streams) | Flask            |
-|RabbitMQ         | DevOps           |
-|Cassandra        | GoCD             |
-|ElasticSearch    | GitlabCI         |
+### Languages
+* Java 8 --> 21
+* Python 2/3
+* JavaScript
+* TypeScript
+* Golang
+* SQL
+
+### Back-end Frameworks
+* Spring
+* Quarkus
+* Flask
+* NodeJS
+* Express
+* Spock (Testing)
+* JUnit
+
+### Front-End Frameworks
+* ReactJS
+* AngularJS
+* VueJS
+* Ionic
+
+### Data Tools
+* Postgres (+Postgis)
+* Cassandra
+* MongoDB
+* Firestore
+* ElasticSearch
+* ActiveMQ
+* Kafka
+* RabbitMQ
+* Spark
+
+### DevOps Tools
+* Ansible
+* Gitlab CI/CD
+* Github Actions
+* GoCD
+* Kubernetes
+* Keycloak, FusionAuth
+
+### Dev Tools
+* Docker
+* Podman
+* Testcontainers
+
+### Cloud Providers
+* Baremetal (Proxmox) on OVH, Scaleway
+* Cloud Run, Firebase on Google Cloud
+* VMs on GCP, AWS, AZURE
+* MongoDB Cloud
+* Okta
 
 # Languages
 * Native Spanish
