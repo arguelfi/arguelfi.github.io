@@ -8,7 +8,7 @@ The whole project was treated as a sort of StartUp within Orange and it went pub
 I've joined the Payments team which integrates 3rd party payment providers by adding control flows and ensuring
 consistency and security to monetary transactions.
 The position includes some DevOps work, 3rd party APIs integration and own logic implementation in Java.
-Technologies used include SpringBoot, Java 8, PostgresDB, Unit Testing in Spock within an ecosystem that includes
+Technologies used include SpringBoot, Java 8 --> 21, Postgres, MongoDB, RabbitMQ, Unit Testing in Spock within an ecosystem that includes
 Kubernetes, Vault, Spring Cloud Config, GoCD, E2E tests, Gitlab and GitlabCI; some Ansible Scripting plus python 
 and NodeJS tools.
 
@@ -112,19 +112,60 @@ Experience with Tapestry, Hibernate, Spring, Sybase, web services, JMS, SOA, etc
 Mentoring of new members of the team including systems architecture.
 ~~-~~
 # Technical Stack
-|                 |                  |
-|:----------------|:-----------------|
-|Java 8/9         | Spark            |
-|JavaScript       | Docker           |
-|Python           | Ansible          |
-|Go               | VueJS            |
-|Spring           | NodeJS           |
-|Postgres/Postgis | AngularJS        |
-|Kafka (+Streams) | Flask            |
-|RabbitMQ         | DevOps           |
-|Cassandra        | GoCD             |
-|ElasticSearch    | GitlabCI         |
+### Languages
+* Java 8 --> 21
+* Python 2/3
+* JavaScript
+* TypeScript
+* Golang
+* SQL
 
+### Back-end Frameworks
+* Spring
+* Quarkus
+* Flask
+* NodeJS
+* Express
+* Spock (Testing)
+* JUnit
+
+### Front-End Frameworks
+* ReactJS
+* AngularJS
+* VueJS
+* Ionic
+
+### Data Tools
+* Postgres (+Postgis)
+* Cassandra
+* MongoDB
+* Firestore
+* ElasticSearch
+* ActiveMQ
+* Kafka
+* RabbitMQ
+* Spark
+
+### DevOps Tools
+* Ansible
+* Gitlab CI/CD
+* Github Actions
+* GoCD
+* Kubernetes
+* Keycloak, FusionAuth
+
+### Dev Tools
+* Docker
+* Podman
+* Testcontainers
+
+### Cloud Providers
+* Baremetal (Proxmox) on OVH, Scaleway
+* Cloud Run, Firebase on Google Cloud
+* VMs on GCP, AWS, AZURE
+* MongoDB Cloud
+* Okta
+  
 # Languages
 * Native Spanish
 * Fluent English
